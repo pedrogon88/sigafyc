@@ -2,7 +2,7 @@
 Imports System.Threading
 Imports Newtonsoft.Json.Linq
 '23/12/2021
-'branch sigafy
+'branch sigafyc
 Module modMain
     Private moSesionActiva As SesionActiva
     Private moBitacoraProceso As BitacoraProceso
