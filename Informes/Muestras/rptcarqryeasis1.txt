@@ -1,0 +1,147 @@
+	Crystal Report Professional v7.0 (32-bit) - Report Definition
+
+1.0 File Information
+
+	Report File: Asistencia de Funcionarios
+	Version: 7.0
+
+2.0 Record Sort Fields
+
+3.0 Group Sort Fields
+
+4.0 Formulas
+
+4.1 Record Selection Formula
+	
+
+4.2 Group Selection Formula
+	
+
+4.3 Other Formulas
+
+5.0 Sectional Information
+
+5.1 Page Header Section
+	Visible
+
+	Asistencia de Funcionarios
+		String, Visible, Left Alignment, Top Alignment, 
+		Keep Together
+
+
+
+	Ordenado Alfabeticamente
+		String, Visible, Right Alignment, Top Alignment, 
+		Keep Together
+
+
+
+	Apellidos y Nombres
+		String, Visible, Left Alignment, Top Alignment, 
+		Keep Together
+
+
+
+	Entrada
+		String, Visible, Left Alignment, Top Alignment, 
+		Keep Together
+
+
+
+	Salida
+		String, Visible, Left Alignment, Top Alignment, 
+		Keep Together
+
+
+
+	Observación
+		String, Visible, Left Alignment, Top Alignment, 
+		Keep Together
+
+
+
+	Del: 
+		String, Visible, Left Alignment, Top Alignment, 
+		Keep Together, Expand
+
+
+	{?fecope}
+		Date, Visible, Left Alignment, Top Alignment, 
+		Keep Together, Expand, Using System Default Formatting, Windows Default Type: Use Windows Short Date, Date Order: Day Month Year, Year Type: Long, Month Type: Leading Zero Numeric Month, Day Type: Leading Zero Numeric Day, Leading Day Type: None, First Separator: '/', Second Separator: '/', Leading Day Separator: ''
+
+
+5.2 Page Footer Section
+	Visible, New Page After, Keep Together, Print At Bottom of Page
+
+	Emitido por 
+		String, Visible, Left Alignment, Top Alignment, 
+		Keep Together, Expand
+
+
+	{@CODUSR}
+		String, Visible, Left Alignment, Top Alignment, 
+		Keep Together, Expand, Using System Default Formatting, Word Wrap
+
+	 el: 
+		String, Visible, Left Alignment, Top Alignment, 
+		Keep Together, Expand
+
+
+	PrintDate
+		Date, Visible, Left Alignment, Top Alignment, 
+		Keep Together, Expand, Using System Default Formatting, Windows Default Type: Use Windows Short Date, Date Order: Day Month Year, Year Type: Long, Month Type: Leading Zero Numeric Month, Day Type: Leading Zero Numeric Day, Leading Day Type: None, First Separator: '/', Second Separator: '/', Leading Day Separator: ''
+
+	 - 
+		String, Visible, Left Alignment, Top Alignment, 
+		Keep Together, Expand
+
+
+	PrintTime
+		Time, Visible, Left Alignment, Top Alignment, 
+		Keep Together, Expand, Using System Default Formatting, Time Base: 24 Hour, AM/PM Type: AM/PM After, Hour Type: Numeric, Minute Type: Numeric, Second Type: Numeric, AM String: 'a.m.', PM String: 'p.m.', Hour Minute Separator: ':', Minute  Second Separator: ':'
+
+
+	rptcaqryeasis1 - Pagina: 
+		String, Visible, Right Alignment, Top Alignment, 
+		Keep Together, Expand
+
+
+	PageNumber
+		Numeric, Visible, Right Alignment, Top Alignment, 
+		Keep Together, Expand, Using System Default Formatting, 
+		Leading Minus, 0 Decimal Places, Rounding: 1, 
+		Thousands Symbol: '.', Decimal Symbol: ','
+
+
+5.3 Report Header Section
+	Visible
+
+5.4 Report Footer Section
+	Visible, New Page After
+
+5.5 Details Section
+	Visible
+
+	Subsection.1 
+		Visible, Keep Together
+
+	{rptcarqryeasis1.NOMBRE}
+		String, Visible, Default Alignment, Top Alignment, 
+		Keep Together, Using System Default Formatting, Word Wrap
+
+
+	{rptcarqryeasis1.ENTRADA}
+		String, Visible, Default Alignment, Top Alignment, 
+		Keep Together, Using System Default Formatting, Word Wrap
+
+
+	{rptcarqryeasis1.SALIDA}
+		String, Visible, Default Alignment, Top Alignment, 
+		Keep Together, Using System Default Formatting, Word Wrap
+
+
+	{rptcarqryeasis1.OBSERV}
+		String, Visible, Default Alignment, Top Alignment, 
+		Keep Together, Using System Default Formatting, Word Wrap
+
+

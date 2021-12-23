@@ -1,0 +1,11 @@
+codcuenta	String	26	1.01.001.0001.00001.000001
+nombre	String	128	BANCO CONTINENTAL SAECA - CTA.CTE. - DOLARES
+decimales	Short		0
+debitos	Number		150000000
+creditos	Number		150000000
+deudor	Number		150000000
+acreedor	Number		150000000
+activo	Number		150000000
+pasivo	Number		150000000
+ingresos	Number		150000000
+egresos	Number		150000000

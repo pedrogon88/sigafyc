@@ -1,0 +1,12 @@
+PROCESO DE INVENTARIO --> VIVIANA IBARRA --> 07:30 - 
+
+*) Toma la planilla del mes anterior y sobre este se realiza la actualización.
+a) verificacion consistencia de datos.
+b) verificacion de ventas del mes. Son los que tienen notas y estan en cero. y registra en la porcion de resumen.
+c) verificacion del stock de las unidades que entraron como parte de pago.
+d) verificacion del stock de recuperados (Juridica-Dación de pago/Juridica-Remate) Pero debe verificarse aquellos que no puede comercializarse porque tienen algun problema de documentación. Esto lo cargaba Patricia Escobar.
+e) En la parte del resumen de JUDICIALES los que aparecen en esta linea son los que fueron recuperados pero tienen algun problema de documentación.
+f) Se cargan las unidades que se estan en Puerto. Información que solo maneja la Srta. Viviana.
+g) Se verifican los que figuran en la linea Test Drive que tambien esta en la base de datos. Y si no figura es porque se pudo haber vendido.
+h) OTROS INGRESOS: Parte de pago / Recuperados
+   

@@ -1,0 +1,8 @@
+codcuenta	String	26	1.01.001.0001.00001.000001
+nombre	String	128	BANCO CONTINENTAL SAECA - CTA. CTE. - MONEDA EXTRANJERA
+fecha	String	10	2019-02-22
+concepto	String	256	Nuestra compra de 5000 Kg. de Azucar de AZPA s/comprobante No. 45454
+nroasiento	Long		000001
+nrosecuencia	Long		001
+debito	Number		123456789,12
+credito	Number		123456789,12

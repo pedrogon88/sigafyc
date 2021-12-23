@@ -1,0 +1,1503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C7FC4DB-B553-4D27-8586-0ACFB9B7B1A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>sigafyc.modMain</StartupObject>
+    <RootNamespace>sigafyc</RootNamespace>
+    <AssemblyName>sigafyc</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>C:\sigafyc\EnProduccion\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>78</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>sigafyc.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>sigafyc.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono_sistema.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B42DEB4B2EBD92CA1037CA1D3E3CE376C78C20BD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>sigafyc_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>sigafyc.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>sigafyc.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>sigafyc.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>sigafyc.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.CrystalReports.Engine.1.0.0\lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.ReportSource.1.0.0\lib\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.Shared.1.0.0\lib\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalDecisions.Windows.Forms.1.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SAPbobsCOM, Version=9.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.SAPbobsCOM.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net48\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=5.0.4.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.5.0.4\lib\netstandard2.0\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2020.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2020.0.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.6.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.4.7.0\lib\netstandard2.0\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net48\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZCRMSDK, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZCRMSDK.4.0.0\lib\net461\ZCRMSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net48\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoDatos\AccesoDatosUtilidades.vb" />
+    <Compile Include="AccesoDatos\DIAPI.vb" />
+    <Compile Include="AccesoDatos\BaseDatos.vb" />
+    <Compile Include="AccesoDatos\BaseDatosException.vb" />
+    <Compile Include="AccesoDatos\Ebase.vb" />
+    <Compile Include="AccesoDatos\ParametrosDIAPI.vb" />
+    <Compile Include="Conciliación Bancaria\Conexion.vb" />
+    <Compile Include="Conciliación Bancaria\CuadrodeProceso\AssemblyInfo.vb" />
+    <Compile Include="Conciliación Bancaria\CuadrodeProceso\CuadrodeProceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conciliación Bancaria\CuadrodeProceso\frmprogressbar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conciliación Bancaria\ExportarExcel.vb" />
+    <Compile Include="Conciliación Bancaria\frmFConciliacion.designer.vb">
+      <DependentUpon>frmFConciliacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Conciliación Bancaria\frmFConciliacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conciliación Bancaria\frmFconsultas.designer.vb">
+      <DependentUpon>frmFconsultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Conciliación Bancaria\frmFconsultas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conciliación Bancaria\frmFimportar.designer.vb">
+      <DependentUpon>frmFimportar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Conciliación Bancaria\frmFimportar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conciliación Bancaria\frmFlistarInformes.designer.vb">
+      <DependentUpon>frmFlistarInformes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Conciliación Bancaria\frmFlistarInformes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conciliación Bancaria\Importar.vb" />
+    <Compile Include="ESistemaPrincipal\Dd010asientosdetalles.vb" />
+    <Compile Include="ESistemaPrincipal\Ea010monedas.vb" />
+    <Compile Include="ESistemaPrincipal\Eb030cotizaciones.vb" />
+    <Compile Include="ESistemaPrincipal\Eb050plancuentas.vb" />
+    <Compile Include="ESistemaPrincipal\Eb070sucursales.vb" />
+    <Compile Include="ESistemaPrincipal\Eb090cuentassaldos.vb" />
+    <Compile Include="ESistemaPrincipal\Ec001empresas.vb" />
+    <Compile Include="ESistemaPrincipal\Eb020conceptos.vb" />
+    <Compile Include="ESistemaPrincipal\Ec020documentos.vb" />
+    <Compile Include="ESistemaPrincipal\Ezis_modcab.vb" />
+    <Compile Include="ESistemaPrincipal\Ezis_moddet.vb" />
+    <Compile Include="ESistemaPrincipal\Ezis_procab.vb" />
+    <Compile Include="ESistemaPrincipal\Ezis_prodet.vb" />
+    <Compile Include="Formularios\Browse\frmBCarteraDeudora.Designer.vb">
+      <DependentUpon>frmBCarteraDeudora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBCarteraDeudora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBCarteraDeudoraDetalle.Designer.vb">
+      <DependentUpon>frmBCarteraDeudoraDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBCarteraDeudoraDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBCarteraDeudoraSeguimiento.Designer.vb">
+      <DependentUpon>frmBCarteraDeudoraSeguimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBCarteraDeudoraSeguimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBzis_modcab.Designer.vb">
+      <DependentUpon>frmBzis_modcab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBzis_modcab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBzis_moddet.Designer.vb">
+      <DependentUpon>frmBzis_moddet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBzis_moddet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBzis_procab.Designer.vb">
+      <DependentUpon>frmBzis_procab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBzis_procab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBzis_prodet.Designer.vb">
+      <DependentUpon>frmBzis_prodet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBzis_prodet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFCarteraDeudoraDetalle.Designer.vb">
+      <DependentUpon>frmFCarteraDeudoraDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFCarteraDeudoraDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFzis_modcab.Designer.vb">
+      <DependentUpon>frmFzis_modcab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFzis_modcab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFzis_moddet.Designer.vb">
+      <DependentUpon>frmFzis_moddet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFzis_moddet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFzis_procab.Designer.vb">
+      <DependentUpon>frmFzis_procab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFzis_procab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFzis_prodet.Designer.vb">
+      <DependentUpon>frmFzis_prodet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFzis_prodet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFCargarModulosZoho.Designer.vb">
+      <DependentUpon>frmFCargarModulosZoho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFCargarModulosZoho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFCargarTablasSAP.Designer.vb">
+      <DependentUpon>frmFCargarTablasSAP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFCargarTablasSAP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFEjecutarAutomatico1.Designer.vb">
+      <DependentUpon>frmFEjecutarAutomatico1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFEjecutarAutomatico1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFEjecutarAutomatico2.Designer.vb">
+      <DependentUpon>frmFEjecutarAutomatico2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFEjecutarAutomatico2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFServidorSocket.Designer.vb">
+      <DependentUpon>frmFServidorSocket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFServidorSocket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFzis_procesar_procab.Designer.vb">
+      <DependentUpon>frmFzis_procesar_procab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFzis_procesar_procab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFzis_procesar_prodet.Designer.vb">
+      <DependentUpon>frmFzis_procesar_prodet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFzis_procesar_prodet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESistemaPrincipal\Eoitmc11.vb" />
+    <Compile Include="ESistemaPrincipal\Eoitmc1.vb" />
+    <Compile Include="ESistemaPrincipal\Ed010asientosdetalles.vb" />
+    <Compile Include="ESistemaPrincipal\Ee010asientoscabeceras.vb" />
+    <Compile Include="FormulariosBases\frmBrowseSinGrid.Designer.vb">
+      <DependentUpon>frmBrowseSinGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosBases\frmBrowseSinGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosBases\frmFVisualizadorReporte.Designer.vb">
+      <DependentUpon>frmFVisualizadorReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosBases\frmFVisualizadorReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosBases\frmProcesamiento.Designer.vb">
+      <DependentUpon>frmProcesamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosBases\frmProcesamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBa010monedas.Designer.vb">
+      <DependentUpon>frmBa010monedas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBa010monedas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBb020conceptos.Designer.vb">
+      <DependentUpon>frmBb020conceptos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBb020conceptos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBb030cotizaciones.Designer.vb">
+      <DependentUpon>frmBb030cotizaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBb030cotizaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBb050plancuentas.Designer.vb">
+      <DependentUpon>frmBb050plancuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBb050plancuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBb070sucursales.Designer.vb">
+      <DependentUpon>frmBb070sucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBb070sucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBc001empresas.Designer.vb">
+      <DependentUpon>frmBc001empresas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBc001empresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBBitacoraSesion.Designer.vb">
+      <DependentUpon>frmBBitacoraSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBBitacoraSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBc020documentos.Designer.vb">
+      <DependentUpon>frmBc020documentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBc020documentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBMayorCuenta.Designer.vb">
+      <DependentUpon>frmBMayorCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBMayorCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBSaldosCuentas.Designer.vb">
+      <DependentUpon>frmBSaldosCuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBSaldosCuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss010sistemas.Designer.vb">
+      <DependentUpon>frmBss010sistemas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss010sistemas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss030tabcab.Designer.vb">
+      <DependentUpon>frmBss030tabcab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss030tabcab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss040tabdet.Designer.vb">
+      <DependentUpon>frmBss040tabdet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss040tabdet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBoitmc1.Designer.vb">
+      <DependentUpon>frmBoitmc1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBoitmc1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss060equipos.Designer.vb">
+      <DependentUpon>frmBss060equipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss060equipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss070perfiles.Designer.vb">
+      <DependentUpon>frmBss070perfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss070perfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss080restricciones.Designer.vb">
+      <DependentUpon>frmBss080restricciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss080restricciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss090perusu.Designer.vb">
+      <DependentUpon>frmBss090perusu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss090perusu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss100habilitaciones.Designer.vb">
+      <DependentUpon>frmBss100habilitaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss100habilitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss110parametros.Designer.vb">
+      <DependentUpon>frmBss110parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss110parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBBitacoraDatos.Designer.vb">
+      <DependentUpon>frmBBitacoraDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBBitacoraDatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFa010monedas.Designer.vb">
+      <DependentUpon>frmFa010monedas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFa010monedas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFb020conceptos.Designer.vb">
+      <DependentUpon>frmFb020conceptos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFb020conceptos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFb030cotizaciones.Designer.vb">
+      <DependentUpon>frmFb030cotizaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFb030cotizaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFb050plancuentas.Designer.vb">
+      <DependentUpon>frmFb050plancuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFb050plancuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFb070sucursales.Designer.vb">
+      <DependentUpon>frmFb070sucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFb070sucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFc001empresas.Designer.vb">
+      <DependentUpon>frmFc001empresas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFc001empresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFc020documentos.Designer.vb">
+      <DependentUpon>frmFc020documentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFc020documentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFCambioPassword.Designer.vb">
+      <DependentUpon>frmFCambioPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFCambioPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFd010asientosdetalles.Designer.vb">
+      <DependentUpon>frmFd010asientosdetalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFd010asientosdetalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFe010asientoscabeceras.Designer.vb">
+      <DependentUpon>frmFe010asientoscabeceras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFe010asientoscabeceras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFoitmc1.Designer.vb">
+      <DependentUpon>frmFoitmc1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFoitmc1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFEnviarMail.Designer.vb">
+      <DependentUpon>frmFEnviarMail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFEnviarMail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFCierreEjercicio.Designer.vb">
+      <DependentUpon>frmFCierreEjercicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFCierreEjercicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFReaperturaEjercicio.Designer.vb">
+      <DependentUpon>frmFReaperturaEjercicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFReaperturaEjercicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFReconstruccionSaldos.Designer.vb">
+      <DependentUpon>frmFReconstruccionSaldos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFReconstruccionSaldos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss010sistemas.Designer.vb">
+      <DependentUpon>frmFss010sistemas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss010sistemas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss030tabcab.Designer.vb">
+      <DependentUpon>frmFss030tabcab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss030tabcab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss040tabdet.Designer.vb">
+      <DependentUpon>frmFss040tabdet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss040tabdet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss050usuarios.Designer.vb">
+      <DependentUpon>frmFss050usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss050usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss060equipos.Designer.vb">
+      <DependentUpon>frmFss060equipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss060equipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss070perfiles.Designer.vb">
+      <DependentUpon>frmFss070perfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss070perfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss080restricciones.Designer.vb">
+      <DependentUpon>frmFss080restricciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss080restricciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss090perusu.Designer.vb">
+      <DependentUpon>frmFss090perusu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss090perusu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss100habilitaciones.Designer.vb">
+      <DependentUpon>frmFss100habilitaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss100habilitaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss100habilitaciones2.Designer.vb">
+      <DependentUpon>frmFss100habilitaciones2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss100habilitaciones2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss110parametros.Designer.vb">
+      <DependentUpon>frmFss110parametros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss110parametros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFExportacionAsiento.Designer.vb">
+      <DependentUpon>frmFExportacionAsiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFExportacionAsiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmMBalances.Designer.vb">
+      <DependentUpon>frmMBalances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmMBalances.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRAsientoDiario.Designer.vb">
+      <DependentUpon>frmRAsientoDiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRAsientoDiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRBalance8Columnas.Designer.vb">
+      <DependentUpon>frmRBalance8Columnas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRBalance8Columnas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRCuadroPatrimonial.Designer.vb">
+      <DependentUpon>frmRCuadroPatrimonial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRCuadroPatrimonial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRCuadroResultado.Designer.vb">
+      <DependentUpon>frmRCuadroResultado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRCuadroResultado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRMayorCuenta.Designer.vb">
+      <DependentUpon>frmRMayorCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRMayorCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRPlanCuentas.Designer.vb">
+      <DependentUpon>frmRPlanCuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Informes\frmRPlanCuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFImportacionAsiento.Designer.vb">
+      <DependentUpon>frmFImportacionAsiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utilitarios\frmFImportacionAsiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\modGRAsientoDiario.vb" />
+    <Compile Include="Informes\modGRBalance8Columnas.vb" />
+    <Compile Include="Informes\modGRCuadroPatrimonial.vb" />
+    <Compile Include="Informes\modGRCuadroResultado.vb" />
+    <Compile Include="Informes\modGRMayorCuenta.vb" />
+    <Compile Include="Informes\modGRPlanCuentas.vb" />
+    <Compile Include="ObjetoDIAPI\Eocrd.vb" />
+    <Compile Include="ObjetoDIAPI\Eocrg.vb" />
+    <Compile Include="ObjetoDIAPI\Eoitb.vb" />
+    <Compile Include="ObjetoDIAPI\Eoitm.vb" />
+    <Compile Include="ObjetoDIAPI\Eordr.vb" />
+    <Compile Include="ObjetoDIAPI\Eoslp.vb" />
+    <Compile Include="Utilitarios\modGFbVerificaMovimientos.vb" />
+    <Compile Include="Utilitarios\modGFcDeterminaSeparador.vb" />
+    <Compile Include="Utilitarios\modGFiVerificaCantidadMovimientos.vb" />
+    <Compile Include="Utilitarios\modGFsCrearTablaTemporal.vb" />
+    <Compile Include="Utilitarios\modGFsCuentaFormat.vb" />
+    <Compile Include="Utilitarios\modGFsEjercicioContable.vb" />
+    <Compile Include="Utilitarios\modGFsExportaRecordSetToTexto.vb" />
+    <Compile Include="Utilitarios\modGFsGrabaScriptToFile.vb" />
+    <Compile Include="Utilitarios\modGFsPythonCreateBulk.vb" />
+    <Compile Include="Utilitarios\modGFsPythonFileUpload.vb" />
+    <Compile Include="Utilitarios\modGFsPythonGetRecord.vb" />
+    <Compile Include="Utilitarios\modGFsPythonStatusBulk.vb" />
+    <Compile Include="Utilitarios\modGFsTieneSubCuentas.vb" />
+    <Compile Include="Formularios\frmAviso.Designer.vb">
+      <DependentUpon>frmAviso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAviso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConfirmacion.Designer.vb">
+      <DependentUpon>frmConfirmacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConfirmacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccesoDatos\ParametrosAviso.vb" />
+    <Compile Include="AccesoDatos\ParametrosConexion.vb" />
+    <Compile Include="ESistemaSeguridad\BitacoraDatos.vb" />
+    <Compile Include="ESistemaSeguridad\BitacoraProcesos.vb" />
+    <Compile Include="ESistemaSeguridad\Ess010sistemas.vb" />
+    <Compile Include="ESistemaSeguridad\Ess020modulos.vb" />
+    <Compile Include="ESistemaSeguridad\Ess030tabcab.vb" />
+    <Compile Include="ESistemaSeguridad\Ess040tabdet.vb" />
+    <Compile Include="ESistemaSeguridad\Ess050usuarios.vb" />
+    <Compile Include="ESistemaSeguridad\Ess060equipos.vb" />
+    <Compile Include="ESistemaSeguridad\Ess070perfiles.vb" />
+    <Compile Include="ESistemaSeguridad\Ess080restricciones.vb" />
+    <Compile Include="ESistemaSeguridad\Ess090perusu.vb" />
+    <Compile Include="ESistemaSeguridad\Ess100habilitaciones.vb" />
+    <Compile Include="ESistemaSeguridad\Ess110parametros.vb" />
+    <Compile Include="ESistemaSeguridad\Ess120bitdatcab.vb" />
+    <Compile Include="ESistemaSeguridad\Ess130bitdatdet.vb" />
+    <Compile Include="ESistemaSeguridad\Ess140bitsescab.vb" />
+    <Compile Include="ESistemaSeguridad\Ess150bitsesdet.vb" />
+    <Compile Include="ESistemaSeguridad\ParametroSistema.vb" />
+    <Compile Include="ESistemaSeguridad\RBase.vb" />
+    <Compile Include="ESistemaSeguridad\SeguridadUtilidades.vb" />
+    <Compile Include="FormulariosBases\frmBrowse.Designer.vb">
+      <DependentUpon>frmBrowse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosBases\frmBrowse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosBases\frmConfirmar.Designer.vb">
+      <DependentUpon>frmConfirmar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosBases\frmConfirmar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosBases\frmFormulario.Designer.vb">
+      <DependentUpon>frmFormulario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosBases\frmFormulario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosBases\frmMensaje.Designer.vb">
+      <DependentUpon>frmMensaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosBases\frmMensaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss020modulos.Designer.vb">
+      <DependentUpon>frmBss020modulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss020modulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss050usuarios.Designer.vb">
+      <DependentUpon>frmBss050usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Browse\frmBss050usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFLoginAcceso.Designer.vb">
+      <DependentUpon>frmFLoginAcceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFLoginAcceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss020modulos.Designer.vb">
+      <DependentUpon>frmFss020modulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFss020modulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMenuPrincipal.Designer.vb">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmMenuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modGPCargar.vb" />
+    <Compile Include="modMain.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utilitarios\ArchivoControl.vb" />
+    <Compile Include="Utilitarios\BitacoraRegistrar.vb" />
+    <Compile Include="Constantes.vb" />
+    <Compile Include="Utilitarios\Correo.vb" />
+    <Compile Include="Utilitarios\EBaseEventArgs.vb" />
+    <Compile Include="Utilitarios\Encriptacion.vb" />
+    <Compile Include="Formularios\Form\frmFGeneraArchivoControl.Designer.vb">
+      <DependentUpon>frmFGeneraArchivoControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form\frmFGeneraArchivoControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitarios\Herramientas.vb" />
+    <Compile Include="Utilitarios\modGFbPuedeModificarBorrar.vb" />
+    <Compile Include="Utilitarios\modGFiCotizacion.vb" />
+    <Compile Include="Utilitarios\modGFdImporte_mb.vb" />
+    <Compile Include="Utilitarios\modGFsTieneMovimientos.vb" />
+    <Compile Include="Utilitarios\modGFsCreaComando.vb" />
+    <Compile Include="Utilitarios\modGFsDefinidoCuentaResultado.vb" />
+    <Compile Include="Utilitarios\modGFsPuedeUsar.vb" />
+    <Compile Include="Utilitarios\modGFsUpdateRelatedRecord.vb" />
+    <Compile Include="Utilitarios\modGFsValidarAsientosAImportar.vb" />
+    <Compile Include="Utilitarios\modGFsZohoError.vb" />
+    <Compile Include="Utilitarios\modGPActualizarEstado_SAP_ZOHO.vb" />
+    <Compile Include="Utilitarios\modGPActualizarExternoCardCode.vb" />
+    <Compile Include="Utilitarios\modGPAsientoActualizaTotales.vb" />
+    <Compile Include="Utilitarios\modGPCierreEjercicio.vb" />
+    <Compile Include="Utilitarios\modGPCuentasSaldos.vb" />
+    <Compile Include="Utilitarios\modGPDatatableTexto.vb" />
+    <Compile Include="Utilitarios\modGPDespliegaBitacoraDatos.vb" />
+    <Compile Include="Utilitarios\modGPEjecutarComando.vb" />
+    <Compile Include="Utilitarios\modGPExportacionAsientos.vb" />
+    <Compile Include="Utilitarios\modGPExportarGridToExcel.vb" />
+    <Compile Include="Utilitarios\modGFsHabilitarOpciones.vb" />
+    <Compile Include="Utilitarios\modGPExportarGridToTexto.vb" />
+    <Compile Include="Utilitarios\modGPImportarAsientos.vb" />
+    <Compile Include="Utilitarios\modGPImportarConceptos.vb" />
+    <Compile Include="Utilitarios\modGPImportarDocumentos.vb" />
+    <Compile Include="Utilitarios\modGPImportarPlanCuenta.vb" />
+    <Compile Include="Utilitarios\modGPInactivarContacto_ZOHO_SAP.vb" />
+    <Compile Include="Utilitarios\modGPIntegracionZohoSAP_COQL.vb" />
+    <Compile Include="Utilitarios\modGPIntegracionZoho_SAP_OCPR.vb" />
+    <Compile Include="Utilitarios\modGPIntegracionZoho_SAP_OCRD.vb" />
+    <Compile Include="Utilitarios\modGPIntegracionZoho_SAP_ORDR.vb" />
+    <Compile Include="Utilitarios\modGPProcesarDeAUno.vb" />
+    <Compile Include="Utilitarios\modGPReaperturaEjercicio.vb" />
+    <Compile Include="Utilitarios\modGPReconstruccionCabAsiento.vb" />
+    <Compile Include="Utilitarios\modGPReconstruccionSaldos.vb" />
+    <Compile Include="Utilitarios\modGPTablaGralEliminarDetalle.vb" />
+    <Compile Include="Utilitarios\modProcesoIntegración.vb" />
+    <Compile Include="Utilitarios\MultiThread.vb" />
+    <Compile Include="Utilitarios\RegistrosOperativos.vb" />
+    <Compile Include="Utilitarios\Registry.vb" />
+    <Compile Include="Utilitarios\SeguridadException.vb" />
+    <Compile Include="Utilitarios\SesionActiva.vb" />
+    <Compile Include="Utilitarios\ValidacionDataEntry.vb" />
+    <Compile Include="Utilitarios\ZohoAPIV2.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Conciliación Bancaria\CuadrodeProceso\CuadrodeProceso.resx" />
+    <EmbeddedResource Include="Conciliación Bancaria\CuadrodeProceso\frmprogressbar.resx" />
+    <EmbeddedResource Include="Conciliación Bancaria\frmFConciliacion.resx">
+      <DependentUpon>frmFConciliacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conciliación Bancaria\frmFconsultas.resx">
+      <DependentUpon>frmFconsultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conciliación Bancaria\frmFimportar.resx">
+      <DependentUpon>frmFimportar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conciliación Bancaria\frmFlistarInformes.resx">
+      <DependentUpon>frmFlistarInformes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosBases\frmBrowseSinGrid.resx">
+      <DependentUpon>frmBrowseSinGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosBases\frmFVisualizadorReporte.resx">
+      <DependentUpon>frmFVisualizadorReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosBases\frmProcesamiento.resx">
+      <DependentUpon>frmProcesamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBa010monedas.resx">
+      <DependentUpon>frmBa010monedas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBb020conceptos.resx">
+      <DependentUpon>frmBb020conceptos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBb030cotizaciones.resx">
+      <DependentUpon>frmBb030cotizaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBb050plancuentas.resx">
+      <DependentUpon>frmBb050plancuentas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBb070sucursales.resx">
+      <DependentUpon>frmBb070sucursales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBc001empresas.resx">
+      <DependentUpon>frmBc001empresas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBBitacoraSesion.resx">
+      <DependentUpon>frmBBitacoraSesion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBc020documentos.resx">
+      <DependentUpon>frmBc020documentos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBCarteraDeudora.resx">
+      <DependentUpon>frmBCarteraDeudora.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBCarteraDeudoraDetalle.resx">
+      <DependentUpon>frmBCarteraDeudoraDetalle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBCarteraDeudoraSeguimiento.resx">
+      <DependentUpon>frmBCarteraDeudoraSeguimiento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBMayorCuenta.resx">
+      <DependentUpon>frmBMayorCuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBSaldosCuentas.resx">
+      <DependentUpon>frmBSaldosCuentas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss010sistemas.resx">
+      <DependentUpon>frmBss010sistemas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss030tabcab.resx">
+      <DependentUpon>frmBss030tabcab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss040tabdet.resx">
+      <DependentUpon>frmBss040tabdet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBoitmc1.resx">
+      <DependentUpon>frmBoitmc1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss060equipos.resx">
+      <DependentUpon>frmBss060equipos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss070perfiles.resx">
+      <DependentUpon>frmBss070perfiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss080restricciones.resx">
+      <DependentUpon>frmBss080restricciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss090perusu.resx">
+      <DependentUpon>frmBss090perusu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss100habilitaciones.resx">
+      <DependentUpon>frmBss100habilitaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss110parametros.resx">
+      <DependentUpon>frmBss110parametros.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBBitacoraDatos.resx">
+      <DependentUpon>frmBBitacoraDatos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBzis_modcab.resx">
+      <DependentUpon>frmBzis_modcab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBzis_moddet.resx">
+      <DependentUpon>frmBzis_moddet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBzis_procab.resx">
+      <DependentUpon>frmBzis_procab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBzis_prodet.resx">
+      <DependentUpon>frmBzis_prodet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFa010monedas.resx">
+      <DependentUpon>frmFa010monedas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFb020conceptos.resx">
+      <DependentUpon>frmFb020conceptos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFb030cotizaciones.resx">
+      <DependentUpon>frmFb030cotizaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFb050plancuentas.resx">
+      <DependentUpon>frmFb050plancuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFb070sucursales.resx">
+      <DependentUpon>frmFb070sucursales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFc001empresas.resx">
+      <DependentUpon>frmFc001empresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFc020documentos.resx">
+      <DependentUpon>frmFc020documentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFCambioPassword.resx">
+      <DependentUpon>frmFCambioPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFCarteraDeudoraDetalle.resx">
+      <DependentUpon>frmFCarteraDeudoraDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFd010asientosdetalles.resx">
+      <DependentUpon>frmFd010asientosdetalles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFe010asientoscabeceras.resx">
+      <DependentUpon>frmFe010asientoscabeceras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFoitmc1.resx">
+      <DependentUpon>frmFoitmc1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFzis_modcab.resx">
+      <DependentUpon>frmFzis_modcab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFzis_moddet.resx">
+      <DependentUpon>frmFzis_moddet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFzis_procab.resx">
+      <DependentUpon>frmFzis_procab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFzis_prodet.resx">
+      <DependentUpon>frmFzis_prodet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFCargarModulosZoho.resx">
+      <DependentUpon>frmFCargarModulosZoho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFCargarTablasSAP.resx">
+      <DependentUpon>frmFCargarTablasSAP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFEjecutarAutomatico1.resx">
+      <DependentUpon>frmFEjecutarAutomatico1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFEjecutarAutomatico2.resx">
+      <DependentUpon>frmFEjecutarAutomatico2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFEnviarMail.resx">
+      <DependentUpon>frmFEnviarMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFCierreEjercicio.resx">
+      <DependentUpon>frmFCierreEjercicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFReaperturaEjercicio.resx">
+      <DependentUpon>frmFReaperturaEjercicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFReconstruccionSaldos.resx">
+      <DependentUpon>frmFReconstruccionSaldos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss010sistemas.resx">
+      <DependentUpon>frmFss010sistemas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss030tabcab.resx">
+      <DependentUpon>frmFss030tabcab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss040tabdet.resx">
+      <DependentUpon>frmFss040tabdet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss050usuarios.resx">
+      <DependentUpon>frmFss050usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss060equipos.resx">
+      <DependentUpon>frmFss060equipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss070perfiles.resx">
+      <DependentUpon>frmFss070perfiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss080restricciones.resx">
+      <DependentUpon>frmFss080restricciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss090perusu.resx">
+      <DependentUpon>frmFss090perusu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss100habilitaciones.resx">
+      <DependentUpon>frmFss100habilitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss100habilitaciones2.resx">
+      <DependentUpon>frmFss100habilitaciones2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss110parametros.resx">
+      <DependentUpon>frmFss110parametros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFExportacionAsiento.resx">
+      <DependentUpon>frmFExportacionAsiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Informes\frmMBalances.resx">
+      <DependentUpon>frmMBalances.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Informes\frmRAsientoDiario.resx">
+      <DependentUpon>frmRAsientoDiario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Informes\frmRBalance8Columnas.resx">
+      <DependentUpon>frmRBalance8Columnas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Informes\frmRCuadroPatrimonial.resx">
+      <DependentUpon>frmRCuadroPatrimonial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Informes\frmRCuadroResultado.resx">
+      <DependentUpon>frmRCuadroResultado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Informes\frmRMayorCuenta.resx">
+      <DependentUpon>frmRMayorCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Informes\frmRPlanCuentas.resx">
+      <DependentUpon>frmRPlanCuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAviso.resx">
+      <DependentUpon>frmAviso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConfirmacion.resx">
+      <DependentUpon>frmConfirmacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosBases\frmBrowse.resx">
+      <DependentUpon>frmBrowse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosBases\frmConfirmar.resx">
+      <DependentUpon>frmConfirmar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosBases\frmFormulario.resx">
+      <DependentUpon>frmFormulario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosBases\frmMensaje.resx">
+      <DependentUpon>frmMensaje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss020modulos.resx">
+      <DependentUpon>frmBss020modulos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Browse\frmBss050usuarios.resx">
+      <DependentUpon>frmBss050usuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFLoginAcceso.resx">
+      <DependentUpon>frmFLoginAcceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFss020modulos.resx">
+      <DependentUpon>frmFss020modulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFImportacionAsiento.resx">
+      <DependentUpon>frmFImportacionAsiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFServidorSocket.resx">
+      <DependentUpon>frmFServidorSocket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFzis_procesar_procab.resx">
+      <DependentUpon>frmFzis_procesar_procab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utilitarios\frmFzis_procesar_prodet.resx">
+      <DependentUpon>frmFzis_procesar_prodet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form\frmFGeneraArchivoControl.resx">
+      <DependentUpon>frmFGeneraArchivoControl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sigafyc_1_TemporaryKey.pfx" />
+    <None Include="sigafyc_ClaveTemporal.pfx" />
+    <None Include="sigafyc_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono_sistema.ico" />
+    <None Include="Resources\icons8-color-processing-481.png" />
+    <None Include="Resources\icons8-processing-48.png" />
+    <None Include="Resources\icons8-processing-32.png" />
+    <None Include="Resources\procesando1.gif" />
+    <None Include="Resources\procesando.gif" />
+    <None Include="Resources\timbo_2273x22711.jpg" />
+    <None Include="Resources\Timbo.png" />
+    <None Include="Resources\respeto.jpg" />
+    <None Include="Resources\timbo_2273x2271.jpg" />
+    <None Include="Resources\icons8-color-print-48.png" />
+    <None Include="Resources\icons8-color-print-32.png" />
+    <None Include="Resources\icons8-next-page-48.png" />
+    <None Include="Resources\icons8-next-page-32.png" />
+    <None Include="Resources\icons8-back-to-48.png" />
+    <None Include="Resources\icons8-back-to-32.png" />
+    <None Include="Resources\Respaldo\BlueUI\icons8-blue-ok-48.png" />
+    <None Include="Resources\Respaldo\BlueUI\icons8-blue-ok-32.png" />
+    <None Include="Resources\Respaldo\BlueUI\icons8-blue-cancel-48.png" />
+    <None Include="Resources\Respaldo\BlueUI\icons8-blue-cancel-32.png" />
+    <None Include="Resources\icons8-details-48.png" />
+    <None Include="Resources\icons8-details-32.png" />
+    <None Include="Resources\icons8-color-details-48.png" />
+    <None Include="Resources\7f95204b-37ad-499f-a4b0-83ec7340270c.png" />
+    <None Include="Resources\2560x1440-2917445-linux-debian___mixed-wallpapers.jpg" />
+    <None Include="Resources\1920x1080-2979438-linux-gnu-debian___mixed-wallpapers.jpg" />
+    <None Include="Resources\background-2462431_640.jpg" />
+    <None Include="Resources\icons8-warn-100.png" />
+    <None Include="Resources\icons8-view-64.png" />
+    <None Include="Resources\icons8-view-48.png" />
+    <None Include="Resources\icons8-survey-64.png" />
+    <None Include="Resources\icons8-survey-48.png" />
+    <None Include="Resources\icons8-survey-32.png" />
+    <None Include="Resources\icons8-print-64.png" />
+    <None Include="Resources\icons8-preview-pane-32.png" />
+    <None Include="Resources\icons8-plus-100.png" />
+    <None Include="Resources\icons8-plus-64.png" />
+    <None Include="Resources\icons8-ok-100.png" />
+    <None Include="Resources\icons8-ok-64.png" />
+    <None Include="Resources\icons8-ok-48.png" />
+    <None Include="Resources\icons8-ok-32.png" />
+    <None Include="Resources\icons8-info-100.png" />
+    <None Include="Resources\icons8-high-priority-100.png" />
+    <None Include="Resources\icons8-eye-64.png" />
+    <None Include="Resources\icons8-eye-48.png" />
+    <None Include="Resources\icons8-eye-32.png" />
+    <None Include="Resources\icons8-exit-64.png" />
+    <None Include="Resources\icons8-exit-48.png" />
+    <None Include="Resources\icons8-exit-32.png" />
+    <None Include="Resources\icons8-edit-row-48.png" />
+    <None Include="Resources\icons8-edit-row-32.png" />
+    <None Include="Resources\icons8-edit-100.png" />
+    <None Include="Resources\icons8-edit-64.png" />
+    <None Include="Resources\icons8-delete-row-48.png" />
+    <None Include="Resources\icons8-delete-row-32.png" />
+    <None Include="Resources\icons8-delete-100.png" />
+    <None Include="Resources\icons8-delete-64.png" />
+    <None Include="Resources\icons8-delete-32.png" />
+    <None Include="Resources\icons8-danger-100.png" />
+    <None Include="Resources\icons8-color-survey-64.png" />
+    <None Include="Resources\icons8-color-survey-48.png" />
+    <None Include="Resources\icons8-color-plus-100.png" />
+    <None Include="Resources\icons8-color-plus-64.png" />
+    <None Include="Resources\icons8-color-ok-100.png" />
+    <None Include="Resources\icons8-color-ok-64.png" />
+    <None Include="Resources\icons8-color-ok-48.png" />
+    <None Include="Resources\icons8-color-eye-48.png" />
+    <None Include="Resources\icons8-color-exit-64.png" />
+    <None Include="Resources\icons8-color-exit-48.png" />
+    <None Include="Resources\icons8-color-edit-row-48.png" />
+    <None Include="Resources\icons8-color-edit-64.png" />
+    <None Include="Resources\icons8-color-delete-row-48.png" />
+    <None Include="Resources\icons8-color-delete-100.png" />
+    <None Include="Resources\icons8-color-delete-64.png" />
+    <None Include="Resources\icons8-color-cancel-64.png" />
+    <None Include="Resources\icons8-color-cancel-48.png" />
+    <None Include="Resources\icons8-color-add-row-48.png" />
+    <None Include="Resources\icons8-color_eye-48.png" />
+    <None Include="Resources\icons8-checked-100.png" />
+    <None Include="Resources\icons8-cancel-100.png" />
+    <None Include="Resources\icons8-cancel-64.png" />
+    <None Include="Resources\icons8-cancel-48.png" />
+    <None Include="Resources\icons8-cancel-32.png" />
+    <None Include="Resources\icons8-add-row-48.png" />
+    <None Include="Resources\icons8-add-row-32.png" />
+    <None Include="Resources\icono_mediano.png" />
+    <None Include="Resources\icono_grande.png" />
+    <None Include="Resources\iconfinder_TextEdit.png" />
+    <None Include="Resources\iconfinder_security.png" />
+    <None Include="Resources\iconfinder_plus.png" />
+    <None Include="Resources\iconfinder_exit.png" />
+    <None Include="Resources\iconfinder_edit.png" />
+    <None Include="Resources\iconfinder_delet.png" />
+    <None Include="Resources\iconfinder_cross.png" />
+    <None Include="Resources\iconfinder_Check.png" />
+    <None Include="Resources\iconfinder_Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+CODPER	Number		123
+NOMBRE	String	80	Apellidos y Nombres
+NOMDEP	String	80	NOMBRE DEL DEPARTAMENTO
+CANDIA	Number		NOMBRE DEL DEPARTAMENTO
+CANHOR	String	80	hh hs. mm min.

@@ -1,0 +1,3 @@
+codcuenta	String	26	1.01.001.0001.00001.000001
+nombre	String	80	NOMBRE DE LA CUENTA CONTABLE
+nivelimputa	String	3	5/I

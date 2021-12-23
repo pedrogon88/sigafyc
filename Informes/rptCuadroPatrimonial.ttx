@@ -1,0 +1,5 @@
+codagrupar	String	45	ACTIVOS
+codcuenta	String	26	1.00.000.0000.00000.000000
+nombre	String	128	A C T I V O 
+nivel	String	1	1
+saldo	Number		1500000000

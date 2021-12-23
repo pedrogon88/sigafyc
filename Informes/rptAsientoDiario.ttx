@@ -1,0 +1,16 @@
+nroasiento	Long		000001
+nrosecuencia	Long		001
+sucursal	String	64	CASA CENTRAL
+documento	String	64	CVC. No. 4545454
+fecha	String	10	2019-02-22
+concepto	String	256	Nuestra compra de 5000 Kg. de YERBA COMPUESTA Marca Campesino s/Comprobante No. 454545 de YERBATERA EL CONDOR.
+codcuenta	String	26	1.01.001.0001.00001.000001
+nombre	String	128	BANCO CONTINENTAL SAECA - CTA. CTE.- DOLARES
+moneda_o	String	20	DOLARES
+moneda_b	String	20	GUARANIES
+decimales_o	Short		2
+decimales_b	Short		0
+debito_o	Number		15000000
+credito_o	Number		15000000
+debito_b	Number		15000000
+credito_b	Number		15000000
